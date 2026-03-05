@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | IT Student & Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="bg-slate-900 text-slate-100 font-sans flex flex-col min-h-screen">
+
+    <nav class="fixed w-full z-50 glass border-0">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#home" class="flex items-center gap-2 group">
+                <img src="assets/CAlogo.png" alt="CA Logo"
+                    class="w-16 h-16 object-contain group-hover:scale-110 transition-transform">
+            </a>
+            <div class="space-x-8 hidden md:flex text-sm font-medium">
+                <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+                <a href="#contact"
+                    class="hover:text-cyan-400 transition text-cyan-400 border border-cyan-400 px-4 py-1 rounded-full">Get
+                    in Touch</a>
+            </div>
+            <!-- Hamburger Menu -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-slate-100 hover:text-cyan-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden  md:hidden">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-slate-700">Home</a>
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-slate-700">About</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-slate-700">Projects</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-slate-700">Skills</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-slate-700">Get in Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero/Home --->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden pt-32">
+        <img id="hero-bg" src="assets/herobg.png" alt="Cityscape background"
+            class="absolute inset-0 w-full h-full object-cover  opacity-40">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/60 to-slate-900"></div>
+
+        <div class="relative z-10 text-center px-6">
+            <div class="mb-8 inline-block p-1 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full shadow-2xl">
+                <img src="assets/prof_pic.png" alt="Profile"
+                    class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-slate-900">
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">
+                Hi I'm <span class="text-cyan-400 typing-span">Christian Ancog</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                A Quezon City University 3rd Year IT Student specializing in Web Development, IoT integration, and
+                developing user-centric digital solutions.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#projects"
+                    class="px-8 py-4 bg-cyan-500 hover:bg-cyan-600 rounded-xl font-bold transition-all transform hover:-translate-y-1">View
+                    My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 px-6 bg-slate-900 scroll-fade ">
+        <div class="max-w-4xl mx-auto relative">
+            <h2
+                class="text-3xl font-bold mb-12 text-center underline decoration-cyan-500 decoration-4 underline-offset-8 text-white afu">
+                About Me</h2>
+            <div class="grid md:grid-cols-3 gap-12 items-start afu d1">
+                <div class="dot-pattern-left hidden xl:block"></div>
+                <div class="dot-pattern-right hidden xl:block"></div>
+
+                <div class="md:col-span-2 space-y-6 text-slate-300 scroll-fade">
+                    <p>I'm Christian Ancog, but you can call me "Chan" or "Cyan." At 21 years old, I live in Barangay
+                        Vasra, Quezon City. I have a mix of a jolly and quiet personality, and I'm focused on building
+                        my self-confidence for my future career. As the youngest in my family, my journey is about
+                        balancing rigorous studies in ethics and enterprise architecture with practical, hands-on
+                        technical projects.</p>
+                    <p>I like watching anime and action series, and I also enjoy doing home workouts and jogging or
+                        brisk walking in my free time. I also love to hangout in different places such as museums,
+                        parks, and nature.
+                        Additionally, my girlfriend and I run a small business retailing
+                        branded cosmetics and accessories. You can check it out <a
+                            href="https://m.me/cm/Abaj1lEMuiTOIFre/?send_source=cm%3Acopy_invite_link" target="_blank"
+                            rel="noopener noreferrer" class="text-cyan-400 hover:underline">here</a>.</p>
+                    <p>If you're interested in collaborating or have any questions, don't hesitate to reach out to me.
+                        Let's create something amazing together!</p>
+                </div>
+                <div class="text-slate-300 bg-slate-800/50 p-6 rounded-xl border border-slate-700 scroll-fade">
+                    <h4 class="text-white font-bold mb-2 border-b border-slate-700 pb-2">Education</h4>
+                    <div class="space-y-4 mt-4">
+                        <div>
+                            <p class="font-semibold text-white">Quezon City University</p>
+                            <p class="text-sm">BS in Information Technology (3rd Year)</p>
+                            <p class="text-sm italic">Focusing on Software Development and UI/UX Design</p>
+                            <p class="text-sm italic">August 2023 - Present</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">San Francisco High School</p>
+                            <p class="text-sm">Senior High School - ICT Strand</p>
+                            <p class="text-sm italic">September 2021 - June 2023</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-white">San Francisco High School</p>
+                            <p class="text-sm">Junior High School</p>
+                            <p class="text-sm italic">June 2017 - March 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dot-pattern-left hidden xl:block"></div>
+            <div class="dot-pattern-right hidden xl:block"></div>
+
+            <div class="mt-16 afu d2">
+                <h3 class="text-2xl font-bold mb-8 text-center text-white">Work Experience</h3>
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 relative overflow-hidden">
+                    <div class="section-dots section-dots-tl"></div>
+                    <div class="section-dots section-dots-br"></div>
+                    <div class="space-y-8">
+                        <div class="tl">
+                            <div class="flex flex-wrap items-start justify-between gap-2 mb-1">
+                                <div>
+                                    <h4 class="text-white font-bold text-base">E-Commerce Designer</h4>
+                                    <p class="text-cyan-400 text-sm font-medium">DECONETWORK</p>
+                                </div>
+                                <span class="tag bg-cyan-500/15 text-cyan-400 border border-cyan-500/30">Feb 2026
+                                    &middot; Part-time</span>
+                            </div>
+                            <p class="text-slate-400 text-sm leading-relaxed">Designed and managed e-commerce
+                                storefronts for clients on the DecoNetwork platform, handling product listings, visual
+                                branding, and online shop configurations.</p>
+                        </div>
+                        <div class="tl">
+                            <div class="flex flex-wrap items-start justify-between gap-2 mb-1">
+                                <div>
+                                    <h4 class="text-white font-bold text-base">Data Encoder</h4>
+                                    <p class="text-cyan-400 text-sm font-medium">COMELEC - District III</p>
+                                </div>
+                                <span class="tag bg-slate-600/40 text-slate-300 border border-slate-600">Mar 2023
+                                    &middot; Seasonal</span>
+                            </div>
+                            <p class="text-slate-400 text-sm leading-relaxed">Assisted the Commission on Elections
+                                District III office with accurate and timely data encoding related to Voters
+                                Registration.
+                            </p>
+                        </div>
+                        <div class="tl">
+                            <div class="flex flex-wrap items-start justify-between gap-2 mb-1">
+                                <div>
+                                    <h4 class="text-white font-bold text-base">Speed Typing Encoder</h4>
+                                    <p class="text-cyan-400 text-sm font-medium">Speed Typing Job</p>
+                                </div>
+                                <span class="tag bg-slate-600/40 text-slate-300 border border-slate-600">Jun - Jul
+                                    2022</span>
+                            </div>
+                            <p class="text-slate-400 text-sm leading-relaxed">Performed high-speed data entry and
+                                listing the informations
+                                about the brand of Moddess.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 afu d3">
+                <h3 class="text-2xl font-bold mb-8 text-center text-white">My Certificates</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="cc group relative overflow-hidden rounded-2xl bg-slate-800/50 border border-slate-700">
+                        <img src="assets/certs/Ui_Ux.png" alt="Certificate" class="w-full h-auto object-cover">
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold mb-2 text-white">NYX UI/UX Design Contest</h4>
+                            <p class="text-slate-400 text-sm">We won 2nd place along Imma and Heila in the NYX UI/UX
+                                Design Contest where we design an e-commerce website using Figma related to their theme.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cc group relative overflow-hidden rounded-2xl bg-slate-800/50 border border-slate-700">
+                        <img src="assets/certs/aspnet.png" alt="Certificate" class="w-full h-auto object-cover">
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold mb-2 text-white">Certificate of Completion in ASP.NET MVC</h4>
+                            <p class="text-slate-400 text-sm">A certificate of completion related to ASP.NET MVC
+                                Fundamentals</p>
+                        </div>
+                    </div>
+                    <div class="cc group relative overflow-hidden rounded-2xl bg-slate-800/50 border border-slate-700">
+                        <img src="assets/certs/cshrap.png" alt="Certificate" class="w-full h-auto object-cover">
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold mb-2 text-white">Certificate of Completion in C#</h4>
+                            <p class="text-slate-400 text-sm">A certificate of completion related to C# Fundamentals.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cc group relative overflow-hidden rounded-2xl bg-slate-800/50 border border-slate-700">
+                        <img src="assets/certs/cisco.png" alt="Certificate" class="w-full h-auto object-cover">
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold mb-2 text-white">Certificate of Completion in Exploring
+                                Networking in Cisco Packet Tracer</h4>
+                            <p class="text-slate-400 text-sm">A certificate of completion related to using and exploring
+                                the fundamentals of Cisco Packet Tracer and networking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="relative py-24 px-6 bg-slate-800 overflow-hidden scroll-fade">
+        <img id="projects-bg" src="assets/herobg.png" alt="Cityscape background"
+            class="absolute inset-0 w-full h-full object-cover opacity-20 -z-20 ">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/60 to-slate-900 -z-10 rotate-180">
+        </div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <h2 id="projects-title"
+                class="text-3xl font-bold mb-16 text-center underline decoration-cyan-500 decoration-4 underline-offset-8">
+                Featured Projects
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <!-- Project 1 -->
+                <div class="flex flex-col h-full rounded-2xl bg-slate-900 border border-slate-700 
+                        hover:border-cyan-500 hover:-translate-y-2 
+                        transition-all duration-300 shadow-lg">
+
+                    <div class="h-48 overflow-hidden rounded-t-2xl">
+                        <img src="assets/proj/Pictic.png" alt="PICTIC Project"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold mb-2">PICTIC</h3>
+
+                        <p class="text-slate-400 text-sm mb-4 flex-1">
+                            An online photobooth platform built with React.js and
+                            Tailwind to create seamless event memories.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">React.js</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">Tailwind</span>
+                        </div>
+
+                        <a href="https://xyzygarde.github.io/Pictic.AppTesting/" target="_blank"
+                            rel="noopener noreferrer" class="text-cyan-500 hover:text-cyan-400 transition">
+                            View Project
+                            <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="flex flex-col h-full rounded-2xl bg-slate-900 border border-slate-700 
+                        hover:border-cyan-500 hover:-translate-y-2 
+                        transition-all duration-300 shadow-lg">
+
+                    <div class="h-48 overflow-hidden rounded-t-2xl">
+                        <img src="assets/proj/Celestia.png" alt="Celestia HRIS"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold mb-2">
+                            Celestia Hotel: Human Resource Information System
+                        </h3>
+
+                        <p class="text-slate-400 text-sm mb-4 flex-1">
+                            A web application built with Next.js, Tailwind, and Node.js
+                            to manage employee data and tasks with fingerprint integration.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">Node.js</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">Next.js</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">Tailwind</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">MySQL</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">Arduino C++</span>
+                        </div>
+
+                        <a href="https://celestia-hotel-hris.vercel.app/" target="_blank" rel="noopener noreferrer"
+                            class="text-cyan-500 hover:text-cyan-400 transition">
+                            View Project
+                            <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="flex flex-col h-full rounded-2xl bg-slate-900 border border-slate-700 
+                        hover:border-cyan-500 hover:-translate-y-2 
+                        transition-all duration-300 shadow-lg">
+
+                    <div class="h-48 overflow-hidden rounded-t-2xl">
+                        <img src="assets/proj/Qcunite.png" alt="QCUnite"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold mb-2">QCUnite</h3>
+
+                        <p class="text-slate-400 text-sm mb-4 flex-1">
+                            A collaborative resource platform specifically designed
+                            for the student community.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">ASP.NET MVC</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">Microsoft SQL
+                                Server</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">Bootstrap</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">JavaScript</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">Razor C#</span>
+                        </div>
+
+                        <div class="mt-auto">
+                            <span class="text-slate-600 text-sm italic">
+                                Project Link Coming Soon
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col h-full rounded-2xl bg-slate-900 border border-slate-700 
+                        hover:border-cyan-500 hover:-translate-y-2 
+                        transition-all duration-300 shadow-lg">
+
+                    <div class="h-48 overflow-hidden rounded-t-2xl">
+                        <img src="assets/proj/qculib.png" alt="QCU Library Management System"
+                            class="w-full h-full object-cover hover:scale-110 transition duration-500">
+                    </div>
+
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold mb-2">Window Based Library Management System for QCU SF Branch</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-1">
+                            A desktop-based library management system for QCU SF Branch where users can manage books,
+                            members, boardgame and transactions.
+                            It also integrates with an barcode scanner to add books to the system.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">VB.NET</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">GUNA UI
+                                Framework</span>
+                            <span class="text-[10px] bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded">MySQL</span>
+
+                        </div>
+
+                        <div class="mt-auto">
+                            <span class="text-slate-600 text-sm italic">
+                                Applicable on Local Desktop
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-24 px-6 bg-slate-800 overflow-hidden relative scroll-fade">
+        <img id="skills-bg" src="assets/skillbg.png" alt="Cityscape background"
+            class="absolute inset-0 w-full h-full object-fill opacity-20 -z-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/60 to-slate-900 -z-10 "></div>
+        <div class="max-w-5xl relative z-10 scroll-fade">
+
+            <!-- ── TECH SKILLS ── -->
+            <h2 class="section-title cyan">Tech Skills</h2>
+            <div class="grid-2">
+
+                <div class="glass">
+                    <div class="skill-header">
+                        <span class="skill-name"><i class="fa-brands fa-js mr-2"></i>JavaScript</span>
+                        <span class="skill-pct" data-pct="70">70%</span>
+                    </div>
+                    <div class="track">
+                        <div class="bar yellow" data-width="70"></div>
+                    </div>
+                </div>
+
+                <div class="glass">
+                    <div class="skill-header">
+                        <span class="skill-name"><i class="fa-brands fa-react mr-2"></i>React</span>
+                        <span class="skill-pct" data-pct="60">60%</span>
+                    </div>
+                    <div class="track">
+                        <div class="bar cyan" data-width="60"></div>
+                    </div>
+                </div>
+
+                <div class="glass">
+                    <div class="skill-header">
+                        <span class="skill-name"><i class="fa-solid fa-code mr-2"></i>C#</span>
+                        <span class="skill-pct" data-pct="60">60%</span>
+                    </div>
+                    <div class="track">
+                        <div class="bar blue" data-width="60"></div>
+                    </div>
+                </div>
+
+                <div class="glass">
+                    <div class="skill-header">
+                        <span class="skill-name"><i class="fa-solid fa-terminal mr-2"></i>VB.NET</span>
+                        <span class="skill-pct" data-pct="75">75%</span>
+                    </div>
+                    <div class="track">
+                        <div class="bar indigo" data-width="75"></div>
+                    </div>
+                </div>
+
+                <div class="glass">
+                    <div class="skill-header">
+                        <span class="skill-name"><i class="fa-brands fa-java mr-2"></i>Java</span>
+                        <span class="skill-pct" data-pct="50">50%</span>
+                    </div>
+                    <div class="track">
+                        <div class="bar red" data-width="50"></div>
+                    </div>
+                </div>
+
+                <div class="glass">
+                    <div class="skill-header">
+                        <span class="skill-name"><i class="fa-solid fa-database mr-2"></i>MySQL</span>
+                        <span class="skill-pct" data-pct="65">65%</span>
+                    </div>
+                    <div class="track">
+                        <div class="bar purple" data-width="65"></div>
+                    </div>
+                </div>
+
+            </div><!-- /grid-2 -->
+
+            <!-- ── PERSONAL SKILLS ── -->
+            <h2 class="section-title emerald">Personal Skills</h2>
+            <div class="grid-3">
+
+                <div class="glass personal-card">
+                    <span class="skill-name"> Communication</span>
+                    <div class="track">
+                        <div class="bar emerald" data-width="60"></div>
+                    </div>
+                    <span class="skill-pct">60%</span>
+                </div>
+
+                <div class="glass personal-card">
+                    <span class="skill-name"> Leadership</span>
+                    <div class="track">
+                        <div class="bar emerald" data-width="55"></div>
+                    </div>
+                    <span class="skill-pct">55%</span>
+                </div>
+
+                <div class="glass personal-card">
+                    <span class="skill-name"> Adaptive</span>
+                    <div class="track">
+                        <div class="bar emerald" data-width="75"></div>
+                    </div>
+                    <span class="skill-pct">75%</span>
+                </div>
+
+                <div class="glass personal-card">
+                    <span class="skill-name"> Resiliency</span>
+                    <div class="track">
+                        <div class="bar emerald" data-width="75"></div>
+                    </div>
+                    <span class="skill-pct">75%</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 px-6 bg-slate-900 scroll-fade">
+        <div class="max-w-xl mx-auto glass p-10 rounded-3xl border border-slate-700">
+            <h2 class="text-3xl font-bold mb-8 text-center text-cyan-400">Contact Me</h2>
+            <form action="https://formspree.io/f/xwvngdlp" method="POST" class="space-y-4">
+                <input type="text" name="name" placeholder="Your Name" required minlength="2" maxlength="50"
+                    class="w-full bg-slate-900/50 border border-slate-700 p-4 rounded-xl outline-none focus:border-cyan-400 transition">
+                <input type="email" name="email" placeholder="Email Address" required maxlength="100"
+                    class="w-full bg-slate-900/50 border border-slate-700 p-4 rounded-xl outline-none focus:border-cyan-400 transition">
+                <textarea name="message" rows="4" placeholder="Your Message" required minlength="10" maxlength="500"
+                    class="w-full bg-slate-900/50 border border-slate-700 p-4 rounded-xl outline-none focus:border-cyan-400 transition"></textarea>
+                <button type="submit"
+                    class="w-full py-4 bg-cyan-500 hover:bg-cyan-600 rounded-xl font-bold shadow-lg shadow-cyan-500/20 transition">Send
+                    Message</button>
+            </form>
+            <div class="mt-8 pt-8 border-t border-slate-700 flex justify-center space-x-6 text-2xl text-slate-400">
+                <a href="https://github.com/XYZygarde/" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-cyan-400 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/kensei.mugurim13/" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-cyan-400 transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/ancog-christian-i-88895332a/" target="_blank"
+                    rel="noopener noreferrer" class="hover:text-cyan-400 transition"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+    </section>
+
+    <footer class="py-12 bg-slate-900 border-t border-slate-800 text-slate-400">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-8 mb-8">
+            <!-- Navigation Links -->
+            <div class="text-center md:text-left">
+                <a href="#home" class="inline-block mb-4">
+                    <img src="assets/CAlogo.png" alt="CA Logo" class="h-10 opacity-80 hover:opacity-100 transition">
+                </a>
+                <div class="flex flex-col space-y-2 text-sm">
+                    <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+                    <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                    <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                    <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="text-center md:text-right">
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider">Get in Touch</h4>
+                <div class="flex flex-col space-y-2 text-sm items-center md:items-end">
+                    <a href="mailto:ancog.christian.ihao@gmail.com"
+                        class="hover:text-cyan-400 transition flex items-center gap-2"><i
+                            class="fa-solid fa-envelope"></i> ancog.christian.ihao@gmail.com</a>
+                    <a href="mailto:ancog.23-2721@qcu.edu.ph"
+                        class="hover:text-cyan-400 transition flex items-center gap-2"><i
+                            class="fa-solid fa-envelope"></i> ancog.23-2721@qcu.edu.ph</a>
+                    <a href="tel:09683106231" class="hover:text-cyan-400 transition flex items-center gap-2"><i
+                            class="fa-solid fa-phone"></i> 09683106231</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center text-slate-600 text-sm pt-8 border-t border-slate-800/50">
+            &copy; <span id="year"></span> Designed &amp; Built by Christian Ancog from Quezon City University
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-3 pointer-events-none"></div>
+
+    <script src="scripts/javascript.js"></script>
+</body>
+
+</html>
