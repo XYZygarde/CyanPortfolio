@@ -120,20 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Parallax effect for projects background
-const projectsBg = document.getElementById('projects-bg');
-if (projectsBg) {
-    window.addEventListener('scroll', () => {
-        const scrollPosition = window.scrollY;
-        // The value of 'top' should be the offset of the projects section from the top of the page.
-        // We subtract this value so the effect starts when the section is in view.
-        const sectionTop = document.getElementById('projects').offsetTop;
-        const scrollInSection = scrollPosition - sectionTop;
-        if (scrollInSection > -window.innerHeight && scrollInSection < projectsBg.parentElement.offsetHeight) {
-             projectsBg.style.transform = `translateY(${(scrollInSection) * 0.2}px)`;
-        }
-    });
-}
+
 
 const bars = document.querySelectorAll('.bar[data-width]');
 
